@@ -24,37 +24,103 @@
   justify-content: center;
   margin: 0 auto;
   max-width: 400px;
+}
 
-  input:active,
-  input:focus,
-  input:focus-visible {
-    border-color: #4e75ff;
-  }
+#datetime-picker {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 272px;
+  padding: 8px 16px;
+  margin-right: 8px;
+}
+#datetime-picker:hover {
+  border-color: #000;
+}
 
-  input:disabled {
-    background-color: #fafafa;
-    color: #808080;
-    cursor: auto;
-  }
+#datetime-picker:active,
+#datetime-picker:focus {
+  border-color: #4e75ff;
+}
+
+#datetime-picker:disabled {
+  background-color: #fafafa;
+  color: #808080;
+  cursor: auto;
+}
+
+button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 75px;
+  height: 40px;
+}
+
+button:hover {
+  background-color: #6c8cff;
+}
+
+button:disabled {
+  color: #989898;
+  background-color: #cfcfcf;
 }
 
 .timer {
   padding-top: 32px;
   gap: 24px;
+}
 
-  .field {
-    display: flex;
-    flex-direction: column;
-  }
+.field {
+  display: flex;
+  flex-direction: column;
+}
 
-  .value {
-    font-size: 40px;
-    line-height: 1.2;
-    letter-spacing: 0.04em;
-    color: #2e2f42;
-  }
+.value {
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
 
-  .label {
-    text-transform: uppercase;
-  }
+.label {
+  text-transform: uppercase;
+}
+
+.container-snackbar {
+  width: 360px;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+input[type='number'] {
+  width: 352px;
+  height: 40px;
+}
+
+fieldset {
+  border-radius: 4px;
+  height: 78px;
+  margin-bottom: 24px;
 }
